@@ -3,16 +3,16 @@ package com.absoft.unit3;
 public class Main {
 
     public static void main(String[] args) {
-        BalletDancingRobot robot;
+        DancingRobot robot;
         robot = new BalletDancingRobot();
         printRobot(robot);
 
 
-        BalletDancingRobot robot1 = new BalletDancingRobot();
+        var robot1 = new FolkDancingRobot();
         printRobot(robot1);
 
 
-        printRobot( new FolkDancingRobot() );
+        printRobot( new JazzDancingRobot() );
     }
 
     private static void printRobot(DancingRobot robot) {
