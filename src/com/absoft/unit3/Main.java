@@ -7,6 +7,7 @@ import com.absoft.unit3.robots.JazzDancingRobot;
 import com.absoft.unit3.shape.Circle;
 import com.absoft.unit3.shape.Rectangle;
 import com.absoft.unit3.shape.Shape;
+import com.absoft.unit3.shape.Квадрат;
 
 public class Main {
 
@@ -46,6 +47,22 @@ public class Main {
         Circle circle1 = new Circle(1);
         Circle circle2 = new Circle(2);
         System.out.println(circle1.getRadius());
+
+
+        System.out.println("========!");
+        Rectangle variable = new Rectangle(3, 2);
+        System.out.println(variable.getSquare());
+
+        variable = new Квадрат(3);
+        System.out.println(variable.getSquare());
+
+        var square = new Квадрат(10);
+        System.out.println(square.getSide1());
+        System.out.println(square.getSide2());
+        System.out.println(square.getSquareSide());
+
+
+
 
     }
 

@@ -1,8 +1,9 @@
 package com.absoft.unit3.shape;
 
 public class Rectangle implements Shape{
-    private final double side1;
-    private final double side2;
+
+    protected double side1;
+    private double side2;
 
 
     public Rectangle(double side1, double side2) {
@@ -13,5 +14,13 @@ public class Rectangle implements Shape{
     @Override
     public double getSquare() {
         return side1 * side2;
+    }
+
+    public double getSide1() {
+        return side1;
+    }
+
+    public double getSide2() {
+        return side2;
     }
 }
